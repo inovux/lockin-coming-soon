@@ -1,0 +1,154 @@
+@layer reset {
+  /* 1. Use a more-intuitive box-sizing model */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+
+  /* 3. Enable keyword animations */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
+    }
+  }
+
+  body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* 6. Improve media defaults */
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* 7. Inherit fonts for form controls */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  /* 8. Avoid text overflows */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+
+  /* 9. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
+
+  /*
+    10. Create a root stacking context
+  */
+  #root,
+  #__next {
+    isolation: isolate;
+  }
+}
+
+@layer base {
+  :root {
+    --clr-green-100: #84ebb4;
+    --clr-green-200: #1fc16b;
+
+    --clr-green-alpha-10: #1fc16b1a;
+
+    --clr-neutral-100: #ffffff;
+    --clr-neutral-200: #e1e1e6;
+    --clr-neutral-300: #c4c3c8;
+    --clr-neutral-400: #a6a4aa;
+    --clr-neutral-500: #8a868c;
+    --clr-neutral-600: #6c686e;
+    --clr-neutral-700: #4f4b50;
+    --clr-neutral-800: #333037;
+    --clr-neutral-900: #1c1a21;
+    --clr-neutral-1000: #0a0a10;
+
+    --clr-neutral-alpha-10: #1c1c231a;
+
+    --clr-primary-100: #baffe0;
+    --clr-primary-200: #74ffc2;
+    --clr-primary-300: #2fffa3;
+    --clr-primary-400: #12e28c;
+    --clr-primary-500: #0ccf87;
+    --clr-primary-600: #008558;
+
+    --clr-primay-alpha-10: #2fffa31a;
+
+    --clr-red-100: #fb3748;
+    --clr-red-200: #d00416;
+
+    --clr-red-alpha-10: #fb37481a;
+
+    --clr-secondary-100: #9ef5ff;
+    --clr-secondary-200: #3debff;
+    --clr-secondary-300: #03e5ff;
+    --clr-secondary-400: #00b3c8;
+    --clr-secondary-500: #007f8e;
+
+    --clr-secondary-alpha-10: #3debff1a;
+
+    --clr-yellow-100: #ffdb43;
+    --clr-yellow-200: #dfb400;
+
+    --clr-yellow-alpha-10: #ffdb431a;
+
+    --radius-full: 100%;
+    --radius-2xl: 2rem;
+    --radius-xl: 1.5rem;
+    --radius-lg: 1.25rem;
+    --radius-md: 1rem;
+    --radius-sm: 0.75rem;
+    --radius-xs: 0.5.rem;
+    --radius-2xs: 0.25rem;
+    --radius-none: 0;
+
+    --spacing-0: 0.125rem;
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 0.75rem;
+    --spacing-4: 1rem;
+    --spacing-5: 1.25rem;
+    --spacing-6: 1.5rem;
+    --spacing-7: 2rem;
+    --spacing-8: 2.5rem;
+    --spacing-9: 3rem;
+    --spacing-10: 3.5rem;
+    --spacing-11: 4rem;
+
+    --stroke-xl: 0.375rem;
+    --stroke-lg: 0.25rem;
+    --stroke-md: 0.125rem;
+    --stroke-sm: 0.0625rem;
+  }
+}
