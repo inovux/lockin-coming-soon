@@ -4,6 +4,7 @@
   *::before,
   *::after {
     box-sizing: border-box;
+    user-select: none;
   }
 
   /* 2. Remove default margin */
@@ -151,8 +152,8 @@
     --stroke-md: 0.125rem;
     --stroke-sm: 0.0625rem;
 
-    --ff-heading-: Montserrat, "sans-serif";
-    --ff-body: "Nunito Sans", "sans-serif";
+    --ff-heading: "Montserrat", sans-serif;
+    --ff-body: "Nunito Sans", sans-serif;
 
     --font-size-heading-display-lg: 6rem;
     --font-size-heading-display-md: 4.5rem;
@@ -177,5 +178,44 @@
     --font-size-body-label-lg: 0.875rem;
     --font-size-body-label-md: 0.75rem;
     --font-size-body-label-sm: 0.625rem;
+  }
+
+  body {
+    font-family: var(--ff-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--ff-heading);
+  }
+
+  .heading-display {
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .heading-display--s {
+    font-size: var(--font-size-heading-display-sm);
+    line-height: 3.5rem;
+  }
+
+  .heading-display--accent {
+    color: var(--clr-primary-500);
+  }
+}
+
+@layer layout {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    max-width: 80%;
   }
 }
