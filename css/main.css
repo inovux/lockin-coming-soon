@@ -233,9 +233,14 @@
   }
 
   .logo-bar {
-    display: inline-block;
-    margin-inline: auto;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--clr-neutral-1000);
+    width: 207px;
+    height: 48px;
+    clip-path: path("M207 0H0C0 0 6.37083 0 12 9.75L33.6483 44.2519C35.1116 46.5842 37.6715 48 40.4248 48H166.575C169.329 48 171.888 46.5842 173.352 44.2519L195 9.75C200.629 0 207 0 207 0Z");
   }
 
   .wrapper {
@@ -243,14 +248,20 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .wrapper--content {
     display: flex;
     flex-direction: column;
     flex: 1;
+    width: 100%;
     background-color: var(--clr-neutral-100);
-    padding: var(--spacing-4);
+    padding: 48px var(--spacing-4) var(--spacing-4);
+  }
+
+  .wrapper--relative {
+    position: relative;
   }
 
   .page-gradient {
