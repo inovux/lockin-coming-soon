@@ -202,6 +202,7 @@
   .heading-display {
     font-weight: 900;
     text-transform: uppercase;
+    margin-bottom: var(--spacing-2);
   }
 
   .heading-display--s {
@@ -218,8 +219,9 @@
   }
 
   .text-body--l {
-    font-size: var(--font-size-body-lg);
-    line-height: 1.5rem;
+    font-weight: 800;
+    font-size: var(--font-size-heading-title-xs);
+    line-height: 2.25rem;
   }
 }
 
