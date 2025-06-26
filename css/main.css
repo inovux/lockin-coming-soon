@@ -327,4 +327,33 @@
       var(--clr-neutral-1000)
     );
   }
+
+  .button--filled {
+    font-family: var(--ff-heading);
+    font-weight: 800;
+    font-size: var(--font-size-body-label-lg);
+    text-align: center;
+    line-height: 2rem;
+    text-decoration: none;
+    color: var(--clr-neutral-1000);
+    background-color: var(--clr-primary-300);
+    transition: background-color 0.3s ease-in-out;
+    padding: 0.75rem 1rem;
+    transform: skewX(-15deg);
+    border-radius: var(--radius-2xs);
+  }
+
+  .button--filled:hover {
+    background-color: var(--clr-primary-200);
+  }
+
+  .button--filled:focus-visible,
+  .button--filled:active {
+    background-color: var(--clr-primary-300);
+  }
+
+  .button--skew {
+    display: block;
+    transform: skewX(15deg);
+  }
 }
