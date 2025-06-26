@@ -274,7 +274,7 @@
     top: 0;
     width: 100%;
     height: 399px;
-    background-image: url("/images/arrow-pattern-cap.svg");
+    background-image: url("../images/arrow-pattern-cap.svg");
     background-position: left;
     background-repeat: no-repeat;
   }
@@ -286,7 +286,7 @@
     top: 0;
     width: calc(100% -  131px);
     height: 399px;
-    background-image: url("/images/arrow-pattern-source.svg");
+    background-image: url("../images/arrow-pattern-source.svg");
     background-repeat: repeat-x;
   }
 
