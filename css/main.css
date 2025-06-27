@@ -202,12 +202,18 @@
   .heading-display {
     font-weight: 900;
     text-transform: uppercase;
+    font-style: italic;
     margin-bottom: var(--spacing-2);
   }
 
   .heading-display--s {
     font-size: var(--font-size-heading-display-xs);
     line-height: 2.5rem;
+
+    @media (min-width: 768px) {
+      font-size: var(--font-size-heading-display-sm);
+      line-height: 3rem;
+    }
   }
 
   .heading-display--accent {
@@ -222,6 +228,11 @@
     font-weight: 800;
     font-size: var(--font-size-heading-title-xs);
     line-height: 2.25rem;
+
+    @media (min-width: 768px) {
+        font-size: var(--font-size-heading-title-sm);
+        line-height: 2;
+    }
   }
 }
 
@@ -368,6 +379,10 @@
     display: inline-block;
     transform: skewX(-15deg);
     border-radius: var(--radius-2xs);
+    @media (min-width: 768px) {
+      font-size: var(--font-size-body-lg);
+      line-height: 1.5rem;
+    }
   }
 
   .button--filled:hover {
