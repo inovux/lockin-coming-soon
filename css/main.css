@@ -84,6 +84,57 @@
 }
 
 @layer base {
+  @font-face {
+    font-family: "Montserrat";
+    src:
+      url("../fonts/Montserrat-Black.woff2") format("woff2"),
+      url("../fonts/Montserrat-Black.woff") format("woff");
+    font-weight: 900;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src:
+      url("../fonts/Montserrat-BlackItalic.woff2") format("woff2"),
+      url("../fonts/Montserrat-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src:
+      url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+      url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+    font-weight: 800;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src:
+      url("../fonts/Montserrat-ExtraBoldItalic.woff2") format("woff2"),
+      url("../fonts/Montserrat-ExtraBoldItalic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src:
+      url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+      url("../fonts/Montserrat-Bold.woff") format("woff");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src:
+      url("../fonts/Montserrat-BoldItalic.woff2") format("woff2"),
+      url("../fonts/Montserrat-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+  }
+
   :root {
     --clr-green-100: #84ebb4;
     --clr-green-200: #1fc16b;
@@ -234,8 +285,8 @@
     line-height: 2.25rem;
 
     @media (min-width: 768px) {
-        font-size: var(--font-size-heading-title-sm);
-        line-height: 2;
+      font-size: var(--font-size-heading-title-sm);
+      line-height: 2;
     }
   }
 }
@@ -258,12 +309,16 @@
     background-color: var(--clr-neutral-1000);
     width: 207px;
     height: 48px;
-    clip-path: path("M207 0H0C0 0 6.37083 0 12 9.75L33.6483 44.2519C35.1116 46.5842 37.6715 48 40.4248 48H166.575C169.329 48 171.888 46.5842 173.352 44.2519L195 9.75C200.629 0 207 0 207 0Z");
+    clip-path: path(
+      "M207 0H0C0 0 6.37083 0 12 9.75L33.6483 44.2519C35.1116 46.5842 37.6715 48 40.4248 48H166.575C169.329 48 171.888 46.5842 173.352 44.2519L195 9.75C200.629 0 207 0 207 0Z"
+    );
 
     @media (min-width: 768px) {
       width: 276px;
       height: 64px;
-      clip-path: path("M276 0H0C0 0 8.49445 0 16 13L45.6483 60.2519C47.1116 62.5842 49.6715 64 52.4248 64H223.575C226.329 64 228.888 62.5842 230.352 60.2519L260 13C267.506 0 276 0 276 0Z")
+      clip-path: path(
+        "M276 0H0C0 0 8.49445 0 16 13L45.6483 60.2519C47.1116 62.5842 49.6715 64 52.4248 64H223.575C226.329 64 228.888 62.5842 230.352 60.2519L260 13C267.506 0 276 0 276 0Z"
+      );
     }
   }
 
@@ -312,14 +367,24 @@
     justify-content: space-between;
     flex: 1;
     width: 100%;
-    padding: calc(var(--spacing-8) + var(--spacing-9)) var(--spacing-4) calc(var(--spacing-4) +  96px);
+    padding: calc(var(--spacing-8) + var(--spacing-9)) var(--spacing-4)
+      calc(var(--spacing-4) + 96px);
     background-color: var(--clr-neutral-100);
-    clip-path: polygon(96px 0%, calc(100% - 96px) 0%, 100% 0, 100% calc(100% - 96px), calc(100% - 96px) 100%, 0 100%, 0% calc(100% - 96px), 0% 96px);
+    clip-path: polygon(
+      96px 0%,
+      calc(100% - 96px) 0%,
+      100% 0,
+      100% calc(100% - 96px),
+      calc(100% - 96px) 100%,
+      0 100%,
+      0% calc(100% - 96px),
+      0% 96px
+    );
     @media (min-width: 768px) {
       padding: calc(var(--spacing-8) + 96px);
       display: block;
     }
-    }
+  }
 
   .wrapper--text {
     @media (min-width: 768px) {
@@ -348,7 +413,7 @@
     position: absolute;
     left: 131px;
     top: 0;
-    width: calc(100% -  131px);
+    width: calc(100% - 131px);
     height: 399px;
     background-image: url("../images/arrow-pattern-source.svg");
     background-repeat: repeat-x;
