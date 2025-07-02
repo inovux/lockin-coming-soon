@@ -345,7 +345,10 @@
     height: 96px;
     background-color: var(--clr-neutral-100);
     transform: rotate(180deg);
-    @media (min-width: 768px) {
+  }
+
+  @media (min-width: 768px) {
+    .wrapper--corners::before {
       clip-path: path("M96 0C96 0 96 8 88 16L16 88C8 96 0 96 0 96V0H96Z");
     }
   }
